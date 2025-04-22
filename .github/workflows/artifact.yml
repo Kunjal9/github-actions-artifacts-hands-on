@@ -28,7 +28,8 @@ jobs:
     - name: Download text file
       uses: actions/download-artifact@v4
       with:
-        path:  hello.txt
+        name: hello-artifact
+        path: ./artifacts
 
     - name: execute CMD
       run: cat ./artifacts/hello.txt
